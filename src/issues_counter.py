@@ -8,6 +8,7 @@ def main():
     :return: timestamp and issue count per day.
     """
     json_list = get_json_list()
+    if setup
     if json_list:
         for json_day in json_list:
             issues_counter = 0
