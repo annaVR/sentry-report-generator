@@ -1,6 +1,6 @@
 import requests
 from sentry_report_generator.timestamps_list import get_epoch_list
-API_ENDPOINT_URL = None
+API_ENDPOINT_URL = None # TODO Add --setup to store endpoint in the configuration file
 
 def get_json_list():
     """
