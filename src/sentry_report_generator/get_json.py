@@ -12,9 +12,10 @@ def get_json_list():
     authorization_token = input("Enter a Bearer token:")
     headers = {'Authorization': authorization_token}
     json_list = []
+    main_url = input("Enter URL:")
     for date in get_epoch_list():
-        url = API_ENDPOINT_URL
-        r = requests.get(url, headers=headers)
+        url_for_day = "https://" + main_url + str(date)
+        r = requests.get(url_for_day, headers=headers)
         response = r.json()
         if r.status_code == 200:
             json_list.append(response)
