@@ -1,4 +1,4 @@
-#Sentry Report: Server issues weekly
+# Sentry Report: Server issues weekly
 
 This tool is created to facilitate creation of Weekly Server Issues Report.
 When using the tool, several GET API calls made to Sentry's stats endpoint.
